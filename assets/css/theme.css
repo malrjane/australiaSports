@@ -33,7 +33,7 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
 }
-.hero h1 {font-size: 3em}
+.hero h1 {font-size: 3em!important}
 /* Базовый контейнер, чтобы все страницы были визуально согласованы */
 .site-container {
   max-width: var(--layout-container-width);
