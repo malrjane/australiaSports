@@ -1,0 +1,53 @@
+{
+  "pages": [
+    {
+      "id": "home",
+      "file": "index.html",
+      "title": "AUS:ACTIVE - Australian Sports Event Calendar",
+      "navLabel": "Home",
+      "description": "High-energy introduction to the Australian sports event directory featuring mission statement, categories, and featured events."
+    },
+    {
+      "id": "events",
+      "file": "events.html",
+      "title": "The Calendar - Upcoming Races & Sports Events",
+      "navLabel": "Events",
+      "description": "The core listing of all sports events including filters, timeline view, spotlight events, and regional focus."
+    },
+    {
+      "id": "testimonials",
+      "file": "testimonials.html",
+      "title": "Voices of the Track - Athlete Reviews",
+      "navLabel": "Testimonials",
+      "description": "Social proof and community stories featuring athlete journeys, review grids, and community statistics."
+    },
+    {
+      "id": "contact",
+      "file": "contact.html",
+      "title": "Get In Touch - Submit an Event",
+      "navLabel": "Contact",
+      "description": "Lead generation page containing contact information, event submission forms, and FAQs."
+    },
+    {
+      "id": "thanks",
+      "file": "thanks.html",
+      "title": "Message Received",
+      "navLabel": null,
+      "description": "Confirmation page displayed after a user submits a form."
+    },
+    {
+      "id": "privacy",
+      "file": "privacy-policy.html",
+      "title": "Privacy Policy",
+      "navLabel": "Privacy Policy",
+      "description": "Legal documentation regarding data collection and privacy practices."
+    },
+    {
+      "id": "terms",
+      "file": "terms-conditions.html",
+      "title": "Terms & Conditions",
+      "navLabel": "Terms & Conditions",
+      "description": "Legal documentation outlining the terms of service and usage rights."
+    }
+  ]
+}

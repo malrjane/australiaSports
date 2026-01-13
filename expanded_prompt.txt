@@ -1,0 +1,245 @@
+WEBSITE DESIGN SPECIFICATION
+
+THEME & VISUAL TOKENS
+
+1.  **Color Palette (Slate-Indigo-Cyan):**
+    *   **Backgrounds:** Slate-50 (main surface), Slate-100 (secondary sections), White (cards).
+    *   **Text:** Slate-900 (primary headings), Slate-600 (body copy), Indigo-600 (links/accents).
+    *   **Primary Action:** Indigo-600 (hover: Indigo-700).
+    *   **Accents:** Cyan-400 to Indigo-500 gradients for subtle borders or overlays.
+    *   **DNA:** Vertical stripes pattern (using subtle CSS repeating-linear-gradient on section backgrounds) to create rhythm.
+
+2.  **Typography (Brutalist / Inter):**
+    *   **Font:** Inter (variable weight).
+    *   **Headings:** Bold to Black weights. Tight tracking (letter-spacing: -0.05em). Uppercase for H1/H2 to lean into the "Poster/Afisha" vibe.
+    *   **Scale:** Massive responsive scaling. H1 on mobile text-4xl -> desktop text-7xl.
+    *   **Body:** High legibility, text-base to text-lg.
+
+3.  **Shapes & Elevation:**
+    *   **Radius:** Segmented-round. Buttons are full pill-shape (rounded-full). Cards have distinct rounded corners (rounded-2xl).
+    *   **Shadows:** Flat or subtle. Emphasis is created via borders (border-slate-200) and layout rather than deep drop shadows.
+    *   **Spacing:** "Hyper-minimal" internal spacing (tight gaps between text and subheads) contrasted with generous "Boxed" padding around the outer edges of containers.
+
+4.  **Layout & Motion:**
+    *   **Container:** "Boxed-content" approach. Max-width-7xl centered, with distinct x-padding (px-6 md:px-12).
+    *   **Grid:** Strict column alignments.
+    *   **Motion:** "Shake-soft". Buttons and cards have a subtle wiggle or scale-up on hover/focus.
+    *   **Breakpoints:** Mobile-first. Aggressive layout changes at 'md' and 'lg'.
+
+---
+
+GLOBAL NAVIGATION (HEADER)
+*   **Structure:** Fixed/Sticky top bar with a glassmorphism effect (backdrop-blur).
+*   **Layout:**
+    *   **Left:** Logo (Text-based "AUS:ACTIVE" in heavy bold Inter, Slate-900).
+    *   **Center (Desktop):** Links to `events.html`, `testimonials.html`, `contact.html`.
+    *   **Right (Desktop):** Primary CTA Button "Submit Event" (links to `contact.html`).
+    *   **Right (Mobile):** Hamburger icon (Feather icon).
+*   **Mobile Menu:**
+    *   **Behavior:** Fullscreen overlay (fixed inset-0, z-50). Background Slate-900. Text White.
+    *   **Content:** Large vertical list of links.
+    *   **Interaction:** Body scroll lock when open. Close on click or ESC.
+
+GLOBAL FOOTER
+*   **Structure:** 4-Column Grid on Desktop, Stacked on Mobile. Background Slate-900, Text Slate-400.
+*   **Col 1:** Logo + 1-sentence mission statement about Australian sports culture.
+*   **Col 2 (Navigation):** Links to `index.html`, `events.html`, `testimonials.html`, `contact.html`.
+*   **Col 3 (Contact):** Australian address (e.g., Sydney, NSW), generic phone number, email (mailto).
+*   **Col 4 (Legal):** Copyright Current Year. Links to `privacy-policy.html` and `terms-conditions.html`.
+*   **Visuals:** Top border in Indigo-500.
+
+---
+
+PAGE 1: HOME (index.html)
+*   **Purpose:** High-energy introduction to the event directory.
+*   **SEO:** "Australian Sports Event Calendar - Marathons, Triathlons & Cycling".
+
+1.  **Hero Section (Split Layout):**
+    *   **Layout:** 50/50 split. Left side: Massive typography "RUN. RIDE. SWIM. AUSTRALIA." Right side: Large illustrative image (Portrait aspect ratio).
+    *   **Image:** Architectural/Sports shot—runner on a bridge or cyclist on a coastal road (Sydney/Melbourne vibe).
+    *   **CTA:** Two buttons: "Browse Events" (primary) -> `events.html`, "List Event" (secondary) -> `contact.html`.
+
+2.  **Mission Statement (Centered Pillar):**
+    *   **Layout:** Narrow central column. Text only.
+    *   **Typography:** Large lead paragraph (text-2xl). Brutalist style.
+    *   **Content:** "From the Gold Coast to Perth, we track every pulse-pounding finish line."
+
+3.  **Event Categories (Grid with Icons):**
+    *   **Layout:** 3-column grid.
+    *   **Visuals:** NO photos. Use large Feather Icons inside colored circles (Cyan/Indigo backgrounds).
+    *   **Content:** "Marathons", "Triathlons", "Urban Cycling". Short description for each.
+
+4.  **Featured Events (Magazine Grid):**
+    *   **Layout:** Asymmetrical grid (1 large item left, 2 smaller stacked right).
+    *   **Image:** Large item uses a landscape photo of a crowd start line. Small items use solid color backgrounds with text overlays.
+    *   **Content:** Highlight fictional events like "The Great Barrier Run" or "Outback Ultra".
+
+5.  **Key Stats (Data Row):**
+    *   **Layout:** 4 columns flex.
+    *   **Style:** Huge numbers (text-6xl font-black text-indigo-600). Small labels.
+    *   **Data:** "500+ Events", "8 States", "10k+ Athletes", "100% Adrenaline".
+
+6.  **Comparison / Format Table:**
+    *   **Layout:** Simple table structure using Divs.
+    *   **Content:** Compare event types (Fun Run vs. Half Marathon vs. Ultra). Distance, difficulty, gear needed.
+    *   **Visuals:** Alternating row colors (zebra striping).
+
+7.  **Testimonial Teaser (Centered):**
+    *   **Layout:** Centered blockquote.
+    *   **Visual:** Large quote mark icon in background (watermark style).
+    *   **Content:** Snippet from a runner about finding their race. Link "Read more stories" -> `testimonials.html`.
+
+8.  **Newsletter CTA:**
+    *   **Layout:** Full-width container with gradient background (Slate to Indigo).
+    *   **Content:** "Don't miss the starting gun. Get weekly updates."
+    *   **Form:** Simple input field + "Subscribe" button (visual only, no backend required here).
+
+---
+
+PAGE 2: EVENTS DIRECTORY (events.html)
+*   **Purpose:** The core listing of all sports events.
+*   **SEO:** "Upcoming Races and Sports Events in Australia".
+
+1.  **Page Header (Minimal):**
+    *   **Layout:** Left-aligned text block.
+    *   **Type:** H1 "THE CALENDAR". Subtext: "Official and community listings across the continent."
+
+2.  **Filter Interface (Visual Only):**
+    *   **Layout:** Row of pill-shaped buttons/dropdown triggers.
+    *   **Labels:** "Location: All Australia", "Discipline: All", "Date: Upcoming".
+    *   **Style:** Outlined buttons, hover fills with Indigo-100.
+
+3.  **Events List - Month View (Timeline/Cards):**
+    *   **Layout:** Vertical stack of cards.
+    *   **Card Structure:** Left: Date box (Day/Month). Center: Event Title & Location (e.g., "Sydney Harbour Dash"). Right: "Details" arrow icon.
+    *   **Visuals:** No photos in individual rows to save space. Clean typography.
+
+4.  **Spotlight Event (Detail Feature):**
+    *   **Layout:** Wide card with background image overlay.
+    *   **Content:** Focus on one major fictional event "The Red Earth Triathlon".
+    *   **Image:** Dramatic landscape of Australian outback.
+
+5.  **Regional Focus (Text Grid):**
+    *   **Layout:** 2x2 Grid.
+    *   **Content:** Text blocks describing running culture in NSW, VIC, QLD, WA.
+    *   **Style:** Bold borders between cells. No images.
+
+6.  **Preparation Advice (Accordion):**
+    *   **Layout:** Collapsible text rows.
+    *   **Topics:** "Hydration in Aussie Heat", "Course Elevation Maps", "Registration Deadlines".
+    *   **Iconography:** Plus/Minus icons for toggle state.
+
+7.  **CTA Banner:**
+    *   **Layout:** Simple centered text.
+    *   **Copy:** "Organizing a race? Get it listed."
+    *   **Action:** Button -> `contact.html`.
+
+---
+
+PAGE 3: WHAT PEOPLE SAY (testimonials.html)
+*   **Purpose:** Social proof and community stories.
+*   **SEO:** "Athlete Reviews and Race Experiences".
+
+1.  **Hero Section:**
+    *   **Layout:** Centered text "VOICES OF THE TRACK".
+    *   **Visual:** Background pattern of abstract track lines.
+
+2.  **Featured Story (Asym Split):**
+    *   **Layout:** Image Left (Portrait), Text Right.
+    *   **Image:** Photo of a tired but happy runner with a medal.
+    *   **Content:** "Sarah's Journey: From Couch to 42km." 3 paragraphs of text.
+
+3.  **Review Grid (Masonry):**
+    *   **Layout:** 3 columns staggered.
+    *   **Card Style:** White cards, shadow-sm, rounded-2xl.
+    *   **Visuals:** NO photos of faces. Use SVG user icons or initials in colored circles.
+    *   **Content:** Short reviews of specific events.
+
+4.  **Community Stats (Pillars):**
+    *   **Layout:** 3 centered columns.
+    *   **Icons:** Feather icons (Star, Heart, User).
+    *   **Content:** "4.8/5 Avg Event Rating", "90% Would Race Again".
+
+5.  **Video Placeholder (Visual Only):**
+    *   **Layout:** 16:9 Aspect Ratio container. Grey background.
+    *   **Center:** Play button icon (Indigo-600) in a white circle.
+    *   **Caption:** "Watch the 2023 Season Highlights".
+
+6.  **Submit Story CTA:**
+    *   **Layout:** Text block with "Write for us" link.
+    *   **Link:** Points to `contact.html`.
+
+---
+
+PAGE 4: CONTACT (contact.html)
+*   **Purpose:** Lead generation and event submission.
+*   **SEO:** "Contact Us - Submit an Event".
+
+1.  **Hero Section:**
+    *   **Layout:** Simple H1 "GET IN TOUCH".
+    *   **Subhead:** "Have a question or a new event to list?"
+
+2.  **Contact Information (Grid):**
+    *   **Layout:** 3 cards.
+    *   **Icons:** Map Pin, Mail, Phone.
+    *   **Content:** "Level 5, 200 George St, Sydney NSW", "hello@ausactive.fake", "+61 2 9000 0000".
+
+3.  **The Form (Primary Interaction):**
+    *   **Layout:** Centered, max-width-xl.
+    *   **Fields:**
+        *   Name (Input)
+        *   Email (Input type=email)
+        *   Inquiry Type (Select: General, Submit Event, Advertising)
+        *   Message (Textarea)
+    *   **Button:** Full width, Indigo-600 background. Label: "Send Message".
+    *   **Action:** Directs user to `thanks.html` upon submission.
+
+4.  **FAQ Section:**
+    *   **Layout:** Two columns of text.
+    *   **Content:** "How do I edit my event?", "Is listing free?", "Advertising rates".
+
+5.  **Sponsors/Partners (Logo Strip):**
+    *   **Layout:** Flex row, grayscale opacity-50.
+    *   **Visuals:** Use placeholder text logos ("SportCo", "Hydrate+", "RunFast"). NO images.
+
+6.  **Location Map Placeholder:**
+    *   **Layout:** Full width, low height (300px).
+    *   **Visual:** Grey background with a Map Pin icon centered.
+    *   **Interaction:** Link wraps the div pointing to Google Maps.
+
+---
+
+PAGE 5: THANK YOU (thanks.html)
+*   **Purpose:** Confirmation of form submission.
+*   **Navigation:** NOT in Header/Footer menus. Hidden from flow.
+
+1.  **Main Content (Centered):**
+    *   **Layout:** Vertically centered in viewport (h-screen).
+    *   **Icon:** Large Green Check-circle feather icon.
+    *   **Heading:** "Message Received!"
+    *   **Copy:** "Thanks for reaching out. We'll get back to you within 24 hours."
+    *   **Button:** "Back to Home" -> `index.html`.
+
+---
+
+PAGES 6 & 7: LEGAL (Footer Only)
+*   **Files:** `privacy-policy.html`, `terms-conditions.html`.
+*   **Layout:** Single narrow column container (max-w-3xl).
+*   **Content:** ~600 words of standard legal Lorem Ipsum. Structure with H2 and Paragraph tags.
+*   **Visuals:** No images. purely text-based.
+
+---
+
+IMAGE GUIDELINES
+*   **Source:** Unsplash / Pexels.
+*   **Queries:** "Marathon runner", "Triathlon bike", "Sydney Opera House distance", "Melbourne sports stadium", "Outback road", "Swimmer in ocean".
+*   **Treatment:** Architectural, high contrast. Use `object-cover` for fills.
+*   **Lazy Loading:** All images below the fold must have `loading="lazy"`.
+*   **Restrictions:** NO small thumbnails. If a visual element is small (<400px), use a Feather Icon or SVG shape.
+
+ACCESSIBILITY & PERFORMANCE
+*   **Contrast:** Ensure Slate-600 text on Slate-50 background meets AA standards.
+*   **Focus:** All interactive elements need a visible `focus:ring` outline (Indigo-400).
+*   **Tags:** Use semantic `<header>`, `<main>`, `<footer>`, `<nav>`, `<section>`.
+*   **Forms:** All inputs must have associated `<label>` elements.
+*   **Preconnect:** Suggest preconnecting to image providers.

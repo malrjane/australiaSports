@@ -1,0 +1,69 @@
+{
+  "createdAt": "2026-01-13T11:59:34.600Z",
+  "brand": "AUS:ACTIVE - Australian Sports Event Calendar",
+  "slots": [
+    {
+      "slot": 1,
+      "topic": "runner on sydney harbour bridge",
+      "taskId": "e3e8a482e57ad8e81ef63d6595a42907",
+      "status": "ok",
+      "url": "https://tempfile.aiquickdraw.com/workers/nano/image_1768305479662_npz9bo.png",
+      "localPath": "assets/img/runner-on-sydney-harbour-bridge.jpg",
+      "size": 117260
+    },
+    {
+      "slot": 2,
+      "topic": "marathon crowd start line",
+      "taskId": "75e1e2d3b44f376908424d57bbf06cab",
+      "status": "ok",
+      "url": "https://tempfile.aiquickdraw.com/workers/nano/image_1768305494352_omo48p.png",
+      "localPath": "assets/img/marathon-crowd-start-line.jpg",
+      "size": 166894
+    },
+    {
+      "slot": 3,
+      "topic": "The Red Earth Triathlon australian outback landscape",
+      "taskId": "38bcd5fcbaffffd7eba0a4e93afa1ee3",
+      "status": "ok",
+      "url": "https://tempfile.aiquickdraw.com/workers/nano/image_1768305511532_58sd8k.png",
+      "localPath": "assets/img/the-red-earth-triathlon-australian-outback-landscape.jpg",
+      "size": 124241
+    },
+    {
+      "slot": 4,
+      "topic": "female runner holding medal portrait",
+      "taskId": "951b6e5694344dc7a182aca9ee011d72",
+      "status": "ok",
+      "url": "https://tempfile.aiquickdraw.com/workers/nano/image_1768305523638_fnyqrw.png",
+      "localPath": "assets/img/female-runner-holding-medal-portrait.jpg",
+      "size": 63359
+    },
+    {
+      "slot": 5,
+      "topic": "marathon runners crossing finish line crowd",
+      "taskId": "b3a971178ba90cefc01e09b934750768",
+      "status": "ok",
+      "url": "https://tempfile.aiquickdraw.com/workers/nano/image_1768305540073_appb96.png",
+      "localPath": "assets/img/marathon-runners-crossing-finish-line-crowd.jpg",
+      "size": 159480
+    },
+    {
+      "slot": 6,
+      "topic": "office team meeting sports planning",
+      "taskId": "a8f38f559e18228534af345d4d3cb659",
+      "status": "ok",
+      "url": "https://tempfile.aiquickdraw.com/workers/nano/image_1768305554982_y31e1x.png",
+      "localPath": "assets/img/office-team-meeting-sports-planning.jpg",
+      "size": 90566
+    },
+    {
+      "slot": 7,
+      "topic": "sydney city map view",
+      "taskId": "306c657775970bf3484448edf4e22326",
+      "status": "ok",
+      "url": "https://tempfile.aiquickdraw.com/workers/nano/image_1768305570297_fofsvj.png",
+      "localPath": "assets/img/sydney-city-map-view.jpg",
+      "size": 199467
+    }
+  ]
+}

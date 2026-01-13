@@ -1,0 +1,19 @@
+{
+  "dna_provided": {
+    "palette": "slate-indigo-cyan",
+    "radius": "segmented-round",
+    "spacing": "hyper-minimal",
+    "alternation": "bg-image-accent",
+    "background": "vertical-stripes",
+    "layout": "boxed-content",
+    "motion": "shake-soft",
+    "imagery": "architectural",
+    "accents": "accent-gradients-soft",
+    "grid": "avatar-grid",
+    "responsive": "media-breakout",
+    "typography": "brutalist-type",
+    "font": "inter"
+  },
+  "stack": "tailwind",
+  "profile": "base_tailwind"
+}

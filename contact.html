@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <script src="assets/js/app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get In Touch - Submit an Event | AUS:ACTIVE</title>
+    <meta name="description" content="Contact AUS:ACTIVE to list your upcoming marathon, triathlon, or cycling event. Have questions? Reach out to our team in Sydney.">
+    <meta name="keywords" content="touch, submit, event, active, contact, list, your, upcoming, marathon, triathlon">
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    </head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-indigo-200 selection:text-indigo-900"><div id="top"></div>
+
+    <!-- GLOBAL HEADER -->
+    <header class="fixed top-0 w-full z-50 bg-slate-50/90 backdrop-blur border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="home.html" class="text-2xl font-black tracking-tighter text-slate-900 uppercase">
+                AUS:<span class="text-indigo-600">ACTIVE</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="events.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors uppercase tracking-wide">Events</a>
+                <a href="testimonials.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors uppercase tracking-wide">Testimonials</a>
+                <a href="contact.html" class="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors uppercase tracking-wide">Contact</a>
+            </nav>
+
+            <!-- Desktop CTA -->
+            <div class="hidden md:block">
+                <a href="contact.html" class="inline-flex items-center justify-center px-6 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-bold rounded-full transition-all transform hover:scale-105">
+                    Submit Event
+                </a>
+            </div>
+
+            <!-- Mobile Burger -->
+            <button data-burger class="md:hidden p-2 text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-400 rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu" aria-hidden="true" focusable="false"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div data-mobile-nav class="hidden fixed inset-0 z-50 bg-slate-900 text-white flex flex-col justify-center items-center gap-8">
+            <button data-burger class="absolute top-6 right-6 p-2 text-white hover:text-indigo-400">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x w-8 h-8" aria-hidden="true" focusable="false"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <a href="home.html" class="text-3xl font-black uppercase tracking-tight hover:text-indigo-400 transition-colors">Home</a>
+            <a href="events.html" class="text-3xl font-black uppercase tracking-tight hover:text-indigo-400 transition-colors">Events</a>
+            <a href="testimonials.html" class="text-3xl font-black uppercase tracking-tight hover:text-indigo-400 transition-colors">Testimonials</a>
+            <a href="contact.html" class="text-3xl font-black uppercase tracking-tight hover:text-indigo-400 transition-colors">Contact</a>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <nav data-mobile-nav class="hidden fixed inset-0 z-50 bg-slate-900 text-white flex flex-col items-center justify-center">
+        <button data-burger class="absolute top-6 right-6 p-2 text-white hover:text-indigo-400">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x w-8 h-8" aria-hidden="true" focusable="false"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <div class="flex flex-col gap-8 text-center">
+            <a href="home.html" class="text-3xl font-black uppercase tracking-tight hover:text-indigo-400">Home</a>
+            <a href="events.html" class="text-3xl font-black uppercase tracking-tight hover:text-indigo-400">Events</a>
+            <a href="testimonials.html" class="text-3xl font-black uppercase tracking-tight hover:text-indigo-400">Testimonials</a>
+            <a href="contact.html" class="text-3xl font-black uppercase tracking-tight text-indigo-500">Contact</a>
+            <a href="contact.html" class="mt-4 inline-block px-8 py-3 bg-indigo-600 rounded-full text-lg font-bold">Submit Event</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-24 px-6 md:px-12 bg-slate-50">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h1 class="text-4xl md:text-6xl font-black text-slate-900 tracking-tight uppercase leading-none">
+                    Get In <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500">Touch</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-600 max-w-lg">
+                    Have a question, feedback, or a new event to list? We connect organizers with athletes across the continent. Let's make it happen.
+                </p>
+            </div>
+            <div class="relative h-64 md:h-96 rounded-2xl overflow-hidden shadow-sm border border-slate-200">
+                <img 
+                    src="assets/img/office-team-meeting-sports-planning.jpg"http://www.w3.org/2000/svg' width='800' height='600' viewBox='0 0 800 600'%3E%3Crect fill='%23e2e8f0' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='24' fill='%2364748b'%3EAUS:ACTIVE HQ Team%3C/text%3E%3C/svg%3E"
+                    data-topic="office team meeting sports planning"
+                    alt="AUS:ACTIVE team discussing event logistics in a modern office"
+                    class="absolute inset-0 w-full h-full object-cover"
+                    loading="eager"
+                 decoding="async">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT INFORMATION GRID -->
+    <section class="py-16 px-6 md:px-12 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="p-8 bg-slate-50 rounded-2xl border border-slate-200 text-center hover:border-indigo-200 transition-colors group">
+                    <div class="w-16 h-16 mx-auto bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin w-8 h-8" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2 uppercase">Visit Us</h3>
+                    <p class="text-slate-600">
+                        Level 5, 200 George St<br>Sydney, NSW 2000
+                    </p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="p-8 bg-slate-50 rounded-2xl border border-slate-200 text-center hover:border-indigo-200 transition-colors group">
+                    <div class="w-16 h-16 mx-auto bg-cyan-100 rounded-full flex items-center justify-center text-cyan-600 mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail w-8 h-8" aria-hidden="true" focusable="false"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2 uppercase">Email Us</h3>
+                    <p class="text-slate-600">
+                        hello@ausactive.fake<br>
+                        support@ausactive.fake
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-8 bg-slate-50 rounded-2xl border border-slate-200 text-center hover:border-indigo-200 transition-colors group">
+                    <div class="w-16 h-16 mx-auto bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mb-6 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone w-8 h-8" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2 uppercase">Call Us</h3>
+                    <p class="text-slate-600">
+                        +61 2 9000 0000<br>
+                        Mon-Fri, 9am - 5pm AEST
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN FORM SECTION -->
+    <section class="py-20 px-6 md:px-12 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-xl mx-auto">
+            <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8 md:p-12">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-black text-slate-900 uppercase tracking-tight mb-2">Send a Message</h2>
+                    <p class="text-slate-600">Fill out the form below and we'll get back to you within 24 hours.</p>
+                </div>
+
+                <form action="thanks.html" method="POST" class="space-y-6">
+                    <!-- Name -->
+                    <div>
+                        <label for="name" class="block text-sm font-bold text-slate-900 mb-2">Full Name</label>
+                        <input type="text" id="name" name="name" required 
+                            class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none transition-all placeholder-slate-400" 
+                            placeholder="Jane Doe">
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label for="email" class="block text-sm font-bold text-slate-900 mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" required 
+                            class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none transition-all placeholder-slate-400" 
+                            placeholder="jane@example.com">
+                    </div>
+
+                    <!-- Inquiry Type -->
+                    <div>
+                        <label for="inquiry" class="block text-sm font-bold text-slate-900 mb-2">Inquiry Type</label>
+                        <div class="relative">
+                            <select id="inquiry" name="inquiry" 
+                                class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none appearance-none transition-all text-slate-700">
+                                <option value="general">General Inquiry</option>
+                                <option value="submit_event">Submit an Event</option>
+                                <option value="advertising">Advertising & Partnerships</option>
+                                <option value="support">Technical Support</option>
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down w-4 h-4" aria-hidden="true" focusable="false"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label for="message" class="block text-sm font-bold text-slate-900 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" required 
+                            class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 focus:outline-none transition-all placeholder-slate-400" 
+                            placeholder="Tell us about your event or question..."></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" 
+                        class="w-full py-4 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="py-20 px-6 md:px-12 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-black text-slate-900 uppercase tracking-tight mb-12 text-center">Frequently Asked Questions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+                <div class="space-y-3">
+                    <h3 class="text-lg font-bold text-slate-900">How do I edit my event listing?</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        If you need to update dates or details for an existing listing, simply send us a message via the form above with the subject "Update Listing" and provide the link to your event.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <h3 class="text-lg font-bold text-slate-900">Is listing an event free?</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Yes! Basic community listings are 100% free. We believe in supporting the Australian sports culture. We also offer premium featured spots for larger races.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <h3 class="text-lg font-bold text-slate-900">What are your advertising rates?</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        We have various packages for brands looking to reach active Australians. Select "Advertising" in the inquiry form to request our media kit.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <h3 class="text-lg font-bold text-slate-900">Do you cover international events?</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Currently, AUS:ACTIVE is focused exclusively on events within Australia and New Zealand. We want to be the best local resource possible.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP PLACEHOLDER -->
+    <section class="w-full bg-slate-200 border-t border-slate-300">
+        <a href="https://maps.google.com" target="_blank" class="block relative h-80 group overflow-hidden">
+            <!-- Using an image to simulate map texture -->
+             <img 
+                src="assets/img/sydney-city-map-view.jpg"http://www.w3.org/2000/svg' width='1200' height='400' viewBox='0 0 1200 400'%3E%3Crect fill='%23cbd5e1' width='1200' height='400'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='24' fill='%2364748b'%3ESydney Map View%3C/text%3E%3C/svg%3E"
+                data-topic="sydney city map view"
+                alt="Map view of Sydney central business district"
+                class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-40 transition-opacity"
+                loading="lazy"
+             decoding="async">
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div class="bg-white p-4 rounded-full shadow-lg transform group-hover:-translate-y-2 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin w-8 h-8 text-indigo-600" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <!-- SPONSORS STRIP -->
+    <section class="py-12 px-6 md:px-12 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-center gap-8 md:gap-16 opacity-50 grayscale">
+            <span class="text-2xl font-black text-white tracking-widest uppercase">SportCo</span>
+            <span class="text-2xl font-black text-white tracking-widest uppercase">Hydrate+</span>
+            <span class="text-2xl font-black text-white tracking-widest uppercase">RunFast</span>
+            <span class="text-2xl font-black text-white tracking-widest uppercase">AussieGear</span>
+            <span class="text-2xl font-black text-white tracking-widest uppercase">TrailX</span>
+        </div>
+    </section>
+
+    <!-- GLOBAL FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 border-t-4 border-indigo-600 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            <!-- Col 1 -->
+            <div class="flex flex-col gap-4">
+                <div class="text-2xl font-black text-white uppercase tracking-tighter">
+                    AUS:<span class="text-indigo-500">ACTIVE</span>
+                </div>
+                <p class="text-sm leading-relaxed">
+                    Celebrating the Australian spirit of endurance. We connect athletes with the best events across the continent, from coastal runs to outback treks.
+                </p>
+                
+            </div>
+
+            <!-- Col 2: Navigation -->
+            <div>
+                <h4 class="text-white font-bold uppercase tracking-wider mb-6">Explore</h4>
+                <ul class="space-y-3">
+                    <li><a href="home.html" class="hover:text-indigo-400 transition-colors">Home</a></li>
+                    <li><a href="events.html" class="hover:text-indigo-400 transition-colors">Events</a></li>
+                    <li><a href="testimonials.html" class="hover:text-indigo-400 transition-colors">Testimonials</a></li>
+                    <li><a href="contact.html" class="hover:text-indigo-400 transition-colors">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Contact -->
+            <div>
+                <h4 class="text-white font-bold uppercase tracking-wider mb-6">Contact</h4>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-start gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin w-4 h-4 mt-1 text-indigo-500" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Level 5, 200 George St,<br>Sydney NSW 2000</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone w-4 h-4 text-indigo-500" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>+61 2 9000 0000</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail w-4 h-4 text-indigo-500" aria-hidden="true" focusable="false"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <a href="mailto:ausactiveaustraliansportseventca@gmail.com" class="hover:text-white transition-colors">hello@ausactive.fake</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Legal -->
+            <div>
+                <h4 class="text-white font-bold uppercase tracking-wider mb-6">Legal</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="privacy-policy.html" class="hover:text-indigo-400 transition-colors">Privacy Policy</a></li>
+                    <li><a href="terms-conditions.html" class="hover:text-indigo-400 transition-colors">Terms & Conditions</a></li>
+                </ul>
+                <p class="mt-6 text-xs text-slate-600">
+                    &copy; 2023 AUS:ACTIVE. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+     <script>
+  if (window.feather) {
+    feather.replace();
+  }</script>
+     
+</body>
+</html>

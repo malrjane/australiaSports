@@ -1,0 +1,65 @@
+:root {
+  --color-primary: #0f172a;
+  --color-secondary: #38bdf8;
+  --color-accent: #f97316;
+  --color-bg: #020617;
+  --color-surface: #020617;
+  --color-text: #e5e7eb;
+  --radius-base: segmented-round;
+  --layout-container-width: 1200px;
+  --layout-gutter-x: 1.5rem;
+ }
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Regular.ttf);
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Bold.ttf);
+  font-display: swap;
+  font-weight: bold;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: normal;
+  font-family: OpenSans, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Базовый контейнер, чтобы все страницы были визуально согласованы */
+.site-container {
+  max-width: var(--layout-container-width);
+  margin-inline: auto;
+  padding-inline: var(--layout-gutter-x);
+}
+
+/* Общие utility-классы, которые ИИ может использовать в Tailwind-окружении */
+.site-card {
+  border-radius: var(--radius-base);
+  background-color: var(--color-surface);
+}
+
+/* Кнопки на всякий случай (если модель захочет использовать эти классы) */
+.btn-primary-soft {
+  border-radius: var(--radius-base);
+  background: var(--color-primary);
+  color: white;
+}
+
+.btn-primary-soft:hover {
+  filter: brightness(1.05);
+}
+
+/* Минимальная адаптация шапки/футера, если модель захочет использовать */
+.site-header,
+.site-footer {
+  backdrop-filter: blur(12px);
+}
